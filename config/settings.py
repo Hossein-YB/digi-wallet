@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'account',
+    'wallet',
 ]
 
 MIDDLEWARE = [
@@ -125,6 +126,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # custom user
-AUTH_USER_MODEL = 'accounts.CustomUser'
+AUTH_USER_MODEL = 'account.CustomUser'
 
 
