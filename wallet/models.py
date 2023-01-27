@@ -5,9 +5,9 @@ from django.utils.translation import gettext as _
 
 class Transaction(models.Model):
     TRANSACTION_CHOOSES = (
-        (1, "Charge"),
-        (2, "purchase"),
-        (1, "Transfer"),
+        (1, _("Charge")),
+        (2, _("purchase")),
+        (1, _("Transfer")),
     )
 
     user = models.ForeignKey(get_user_model(), related_name="transaction", on_delete=models.RESTRICT,
